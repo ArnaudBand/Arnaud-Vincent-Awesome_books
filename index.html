@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="app.js" defer></script>
-    <title>Awesome BookList</title>
-</head>
-<body>
-    <div class="book-list"></div>
-    <form action="#" class="form">
-        <div class="form_div">
-            <input type="text" name="title" id="title" placeholder="Type your Title">
+    <title>Awesome</title>
+  </head>
+  <body">
+    <div class="block">
+      <h1>Awesome Books</h1>
+      <div class="book-list"></div>
+    </div>
+    <div id="add">
+      <form action="#" class="add-book">
+        <h3>Add a book</h3>
+        <div>
+          <input type="text" class="title" placeholder="Title" />
         </div>
-        <div class="form_div">
-            <input type="text" name="author" id="author" placeholder="Type your author">
+        <div>
+          <input type="text" class="author" placeholder="Author" />
         </div>
-        <button type="button" class="add-button">Add</button>
-    </form>
-</body>
+        <button class="add-btn" type="submit">
+          Add
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
