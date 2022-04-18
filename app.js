@@ -45,7 +45,7 @@ function UI() {}
 UI.prototype.displayBook = function (newBook) {
   Library.collection.forEach((book) => {
     if (book.title === newBook.title) {
-        bookList.innerHTML += `
+      bookList.innerHTML += `
         <div>
           <div class="books_store">
             <p>${newBook.title}</p>
@@ -55,7 +55,6 @@ UI.prototype.displayBook = function (newBook) {
         </div>
         
         `;
-     
     }
   });
 };
@@ -90,6 +89,7 @@ function removeBook(e) {
     newDisplay.deleteBook(e.target);
     Library.removeABook(e.target);
 
+    // eslint-disable-next-line no-restricted-globals
     location.reload();
   }
 }
