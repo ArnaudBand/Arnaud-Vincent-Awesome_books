@@ -1,3 +1,4 @@
+/* eslint-disable keyword-spacing */
 const form = document.querySelector('.add-book');
 const bookTitle = document.querySelector('.title');
 const bookAuthor = document.querySelector('.author');
@@ -43,10 +44,11 @@ function Book(title, author) {
 function UI() {}
 
 UI.prototype.displayBook = function (newBook) {
-  Library.collection.forEach((book) => {
+  Library.collection.forEach((book, index) => {
     if (book.title === newBook.title) {
-      bookList.innerHTML += `
-        <div>
+      if(index % 2 === 0) {
+        bookList.innerHTML += `
+        <div class="book-class back-gray">
           <div class="books_store">
             <p>${newBook.title}</p>
             <p>&nbsp by ${newBook.author}</p>
@@ -55,6 +57,18 @@ UI.prototype.displayBook = function (newBook) {
         </div>
         
         `;
+      } else {
+        bookList.innerHTML += `
+        <div class="book-class">
+          <div class="books_store">
+            <p>${newBook.title}</p>
+            <p>&nbsp by ${newBook.author}</p>
+          </div>
+          <button class='remove' type='button'>Remove</button>
+        </div>
+        
+        `;
+      }
     }
   });
 };

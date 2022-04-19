@@ -3,4 +3,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(https://media.istockphoto.com/photos/pattern-of-books-in-different-positions-and-located-in-the-part-of-picture-id1320488856?b=1&k=20&m=1320488856&s=170667a&w=0&h=AN3klZUZTu_pGxAl-h-dfTyD1KeEAkjd3Ax-JtS2zPM=) no-repeat;
+  width: 100%;
+}
+
+.block h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.block h1 span {
+  color: aqua;
+}
+
+.book-list {
+  border: 2px solid #000;
+  border-radius: 7px;
+}
+
+.book-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  width: 400px;
+}
+
+.back-gray {
+  background-color: rgba(68, 65, 65, 0.336);
+}
+
+.books_store {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.books_store p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.remove {
+  padding: 6px 10px;
+}
+
+.border-width {
+  height: 5px;
+  width: 200px;
+  background-color: #000;
+  margin: 10px 0;
+  border-radius: 20%;
+}
+
+.add-book h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.add-book h3 span {
+  color: aqua;
+}
+
+.add-book input {
+  margin: 5px;
+  padding: 10px 100px 10px 20px;
+}
+
+.add-btn {
+  padding: 6px;
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 796px) {
+  .book-class {
+    width: 100%;
+  }
+
+  .add-book input {
+    padding: 8px 50px 8px 15px;
+  }
+
+  .add-btn {
+    padding: 4px;
+    margin-left: 200px;
+  }
 }
