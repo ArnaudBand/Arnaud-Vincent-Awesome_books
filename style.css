@@ -26,7 +26,7 @@ body {
 
 .book-list {
   border: 2px solid #000;
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 .book-class {
@@ -53,7 +53,7 @@ body {
 }
 
 .remove {
-  padding: 5px 10px;
+  padding: 6px 10px;
 }
 
 .border-width {
