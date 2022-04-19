@@ -24,15 +24,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+### Setup Node.js
 
-### Install
+### Install Linters for HTML
 
 ### Usage
-
-### Run tests
-
-### Deployment
 
 
 
