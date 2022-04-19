@@ -49,7 +49,7 @@ UI.prototype.displayBook = function (newBook) {
         <div>
           <div class="books_store">
             <p>${newBook.title}</p>
-            <small>&nbsp by ${newBook.author}</small>
+            <p>&nbsp by ${newBook.author}</p>
           </div>
           <button class='remove' type='button'>Remove</button>
         </div>
