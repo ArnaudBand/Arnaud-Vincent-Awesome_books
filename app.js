@@ -59,7 +59,7 @@ UI.prototype.displayBook = function (newBook) {
         `;
       } else {
         bookList.innerHTML += `
-        <div class="book-class back-white">
+        <div class="book-class">
           <div class="books_store">
             <p>${newBook.title}</p>
             <p>&nbsp by ${newBook.author}</p>
