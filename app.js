@@ -1,4 +1,6 @@
 /* eslint-disable keyword-spacing */
+
+// Variables
 const form = document.querySelector('.add-book');
 const bookTitle = document.querySelector('.title');
 const bookAuthor = document.querySelector('.author');
@@ -40,6 +42,8 @@ function Book(title, author) {
   this.title = title;
   this.author = author;
 }
+
+//  Class UI helps to display and remove books
 
 function UI() {}
 
@@ -84,6 +88,8 @@ UI.prototype.deleteBook = function (target) {
 
 const newDisplay = new UI();
 
+// AddBook function: to add books to our page in the storage and change them into objects.
+
 function addBook(e) {
   const title = bookTitle.value;
   const author = bookAuthor.value;
@@ -98,6 +104,8 @@ function addBook(e) {
   e.preventDefault();
 }
 
+// RemoveBook function: This function was build to remove a book added by the function below
+
 function removeBook(e) {
   if (e.target.className === 'remove') {
     newDisplay.deleteBook(e.target);
@@ -107,6 +115,8 @@ function removeBook(e) {
     location.reload();
   }
 }
+
+// AddEventListener
 
 form.addEventListener('submit', addBook);
 bookList.addEventListener('click', removeBook);
