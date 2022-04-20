@@ -8,19 +8,16 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : - HTML
+                    - CSS
+                    - JavaScript
+- No Frameworks
+- Technologies used: Use classes in javaScript 
 
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+## Description 
+In this project, you will take the Awesome books application and convert it into a fully functional website. You will refactor the project to add three new sections on top of the two sections you have already completed: Books list (done), Add book form (done), a new Contact info section, a Navigation bar, and a Footer.
 
 ### Prerequisites
 
