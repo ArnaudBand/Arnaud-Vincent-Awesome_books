@@ -5,16 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <script src="app.js" defer></script>
     <title>Awesome</title>
   </head>
   <body>
-    <div class="block">
+    <header class="top-header">
+      <nav class="nav_bar">
+        <div class="left-side">
+          <h3 class="top_title">Awesome books</h3>
+        </div>
+        <div class="right-side">
+          <button type="button" class="list-btn">List</button>
+          <button type="button" class="adde-btn-1">Add new book</button>
+          <button type="button" class="contact-btn">Contact</button>
+        </div>
+      </nav>
+      <div class="clock"></div>
+    </header>
+    <section class="block">
       <h1><span>A</span>ll awesome boo<span>ks</span></h1>
       <div class="book-list"></div>
-    </div>
-    <div class="border-width"></div>
-    <div id="add">
+      <div class="border-width"></div>
+    </section>
+    
+    <section id="add" class="form-section">
       <form action="#" class="add-book">
         <h3>Add a <span>new</span> book</h3>
         <div>
@@ -27,6 +42,6 @@
           Add
         </button>
       </form>
-    </div>
+    </section>
   </body>
 </html>
