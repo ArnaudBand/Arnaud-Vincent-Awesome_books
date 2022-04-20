@@ -8,9 +8,11 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : - HTML
+                    - CSS
+                    - JavaScript
+- No Frameworks
+- Technologies used: Use classes in javaScript 
 
 
 
