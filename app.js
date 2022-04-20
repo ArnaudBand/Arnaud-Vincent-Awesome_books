@@ -47,7 +47,7 @@ function Book(title, author) {
 
 function UI() {}
 
-UI.prototype.displayBook = function (newBook) {
+UI.prototype.displayBook = (newBook) => {
   Library.collection.forEach((book, index) => {
     if (book.title === newBook.title) {
       if(index % 2 === 0) {
@@ -77,12 +77,12 @@ UI.prototype.displayBook = function (newBook) {
   });
 };
 
-UI.prototype.deleteInput = function (book1, book2) {
+UI.prototype.deleteInput = (book1, book2) => {
   book1.value = '';
   book2.value = '';
 };
 
-UI.prototype.deleteBook = function (target) {
+UI.prototype.deleteBook = (target) => {
   target.parentElement.remove();
 };
 
