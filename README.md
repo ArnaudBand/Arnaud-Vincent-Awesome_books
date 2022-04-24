@@ -27,6 +27,9 @@ In this project, you will take the Awesome books application and convert it into
 
 ### Usage
 
+### Deployment live
+
+[live Demo](https://arnaudband.github.io/Arnaud-Vincent-Awesome_books/)
 
 
 ## Authors
